@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "tsup index.ts --dts --format cjs,esm --no-splitting",
+    "build": "tsup src/index.ts --dts --format cjs,esm --no-splitting",
     "prepublishOnly": "npm run build",
     "release": "npx git-ensure -a && npx bumpp --push --tag --commit",
     "example:serve": "npm -C example run serve",
