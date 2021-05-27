@@ -1,0 +1,13 @@
+{
+  "name": "fixture",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "serve": "node dist/index.js"
+  },
+  "devDependencies": {
+    "esbuild-plugin-raw": "workspace:^0.1.0",
+    "typescript": "^4.3.2"
+  }
+}
