@@ -36,3 +36,7 @@ export default defineConfig({
   clean: true,
 })
 ```
+
+## License
+
+MIT License © 2021 [hannoeru](https://github.com/hannoeru)
