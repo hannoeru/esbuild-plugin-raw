@@ -7,7 +7,7 @@
     "serve": "node dist/index.js"
   },
   "devDependencies": {
-    "esbuild-plugin-raw": "workspace:^0.1.0",
+    "esbuild-plugin-raw": "workspace:*",
     "typescript": "^4.3.2"
   }
 }
