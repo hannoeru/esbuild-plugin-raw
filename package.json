@@ -14,7 +14,9 @@
   "homepage": "https://github.com/hannoeru/esbuild-plugin-raw",
   "bugs": "https://github.com/hannoeru/esbuild-plugin-raw/issues",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts",
+    "client.d.ts"
   ],
   "scripts": {
     "dev": "npm run build -- --watch",
