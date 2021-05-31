@@ -26,9 +26,6 @@
     "example:serve": "npm -C example run serve",
     "example:build": "npm -C example run build"
   },
-  "dependencies": {
-    "debug": "^4.3.2"
-  },
   "peerDependencies": {
     "esbuild": "^0.11.0"
   },
