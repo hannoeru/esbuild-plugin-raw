@@ -1,6 +1,6 @@
-import fs from 'fs'
 import path from 'path'
-import { Plugin } from 'esbuild'
+import { readFile } from 'fs/promises'
+import type { Plugin } from 'esbuild'
 
 export default function rawPlugin(): Plugin {
   return {
@@ -14,7 +14,7 @@ export default function rawPlugin(): Plugin {
       })
       build.onLoad({ filter: /\?raw$/, namespace: 'raw-loader' }, async(args) => {
         return {
-          contents: await fs.promises.readFile(args.path.replace(/\?raw$/, '')),
+          contents: await readFile(args.path.replace(/\?raw$/, '')),
           loader: 'text',
         }
       })
