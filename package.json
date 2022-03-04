@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-raw",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "esbuild plugin for raw import",
   "license": "MIT",
   "repository": {
