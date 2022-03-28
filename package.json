@@ -3,16 +3,14 @@
   "version": "0.1.5",
   "description": "esbuild plugin for raw import",
   "license": "MIT",
+  "author": "hannoeru <me@hanlee.co>",
   "repository": {
     "type": "git",
     "url": "https://github.com/hannoeru/esbuild-plugin-raw"
   },
-  "author": "hannoeru <me@hanlee.co>",
-  "files": [
-    "dist",
-    "index.d.ts",
-    "client.d.ts"
-  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
@@ -20,9 +18,11 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "client.d.ts"
+  ],
   "homepage": "https://github.com/hannoeru/esbuild-plugin-raw",
   "bugs": "https://github.com/hannoeru/esbuild-plugin-raw/issues",
   "scripts": {
