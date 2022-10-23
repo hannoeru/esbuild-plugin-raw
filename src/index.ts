@@ -8,13 +8,18 @@ export default function rawPlugin(): Plugin {
     setup(build) {
       build.onResolve({ filter: /\?raw$/ }, (args) => {
         return {
-          path: path.isAbsolute(args.path) ? args.path : path.join(args.resolveDir, args.path),
+          path: args.path,
+          pluginData: {
+            isAbsolute: path.isAbsolute(args.path),
+            resolveDir: args.resolveDir,
+          },
           namespace: 'raw-loader',
         }
       })
       build.onLoad({ filter: /\?raw$/, namespace: 'raw-loader' }, async(args) => {
+        const fullPath = args.pluginData.isAbsolute ? args.path : path.join(args.pluginData.resolveDir, args.path);
         return {
-          contents: await readFile(args.path.replace(/\?raw$/, '')),
+          contents: await readFile(fullPath.replace(/\?raw$/, '')),
           loader: 'text',
         }
       })
