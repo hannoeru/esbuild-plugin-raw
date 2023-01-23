@@ -34,12 +34,12 @@
     "example:build": "npm -C example run build"
   },
   "peerDependencies": {
-    "esbuild": "^0.14.36 || ^0.15.0 || ^0.16.0"
+    "esbuild": "^0.14.36 || ^0.15.0 || ^0.16.0 || ^0.17.0"
   },
   "devDependencies": {
     "@hannoeru/eslint-config": "^0.9.4",
     "@types/node": "^18.11.18",
-    "esbuild": "^0.16.16",
+    "esbuild": "^0.17.4",
     "eslint": "^8.31.0",
     "tsup": "^6.5.0",
     "typescript": "^4.9.4"
