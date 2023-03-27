@@ -2936,8 +2936,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /sucrase/3.30.0:
-    resolution: {integrity: sha512-7d37d3vLF0IeH2dzvHpzDNDxUqpbDHJXTJOAnQ8jvMW04o2Czps6mxtaSnKWpE+hUS/eczqfWPUgQTrazKZPnQ==}
+  /sucrase/3.31.0:
+    resolution: {integrity: sha512-6QsHnkqyVEzYcaiHsOKkzOtOgdJcb8i54x6AV2hDwyZcY9ZyykGZVw6L/YN98xC0evwTP6utsWWrKRaa8QlfEQ==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
@@ -3072,7 +3072,7 @@ packages:
       resolve-from: 5.0.0
       rollup: 3.20.2
       source-map: 0.8.0-beta.0
-      sucrase: 3.30.0
+      sucrase: 3.31.0
       tree-kill: 1.2.2
       typescript: 5.0.2
     transitivePeerDependencies:
