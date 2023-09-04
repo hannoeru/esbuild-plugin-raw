@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@hannoeru/eslint-config": "^0.9.7",
-    "@types/node": "^18.17.12",
+    "@types/node": "^18.17.14",
     "esbuild": "^0.19.2",
     "eslint": "^8.48.0",
     "tsup": "^6.7.0",
