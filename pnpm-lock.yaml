@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@hannoeru/eslint-config':
-        specifier: ^0.9.5
+        specifier: ^0.9.7
         version: 0.9.7(eslint@8.48.0)(typescript@5.2.2)
       '@types/node':
         specifier: ^18.17.12
