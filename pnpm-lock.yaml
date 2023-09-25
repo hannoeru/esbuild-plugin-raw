@@ -12,8 +12,8 @@ importers:
         specifier: ^0.9.7
         version: 0.9.7(eslint@8.49.0)(typescript@5.2.2)
       '@types/node':
-        specifier: ^18.17.17
-        version: 18.17.17
+        specifier: ^18.17.19
+        version: 18.17.19
       esbuild:
         specifier: ^0.19.3
         version: 0.19.3
@@ -647,8 +647,8 @@ packages:
       '@types/unist': 2.0.8
     dev: true
 
-  /@types/node@18.17.17:
-    resolution: {integrity: sha512-cOxcXsQ2sxiwkykdJqvyFS+MLQPLvIdwh5l6gNg8qF6s+C7XSkEWOZjK+XhUZd+mYvHV/180g2cnCcIl4l06Pw==}
+  /@types/node@18.17.19:
+    resolution: {integrity: sha512-+pMhShR3Or5GR0/sp4Da7FnhVmTalWm81M6MkEldbwjETSaPalw138Z4KdpQaistvqQxLB7Cy4xwYdxpbSOs9Q==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
