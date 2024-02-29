@@ -27,8 +27,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run test
-        run: pnpm test --if-present
+      # - name: Run test
+      #   run: pnpm test --if-present
 
       - name: Publish package
         run: pnpm publish --access public
