@@ -15,26 +15,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Use Node.js 14.x
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '14.x'
+          node-version-file: .nvmrc
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: |
-          npm i -g pnpm @antfu/ni
-          nci
+        run: pnpm install
 
       - name: Run test
-        run: nr test --if-present
+        run: pnpm test --if-present
 
       - name: Publish package
-        run: npm publish --access public
+        run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: GitHub Release
-        run: npx conventional-github-releaser -p angular
+        run: pnpm dlx conventional-github-releaser -p angular
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}

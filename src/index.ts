@@ -1,5 +1,5 @@
-import path from 'path'
 import { readFile } from 'fs/promises'
+import path from 'path'
 import type { Plugin } from 'esbuild'
 
 export default function rawPlugin(): Plugin {
@@ -17,7 +17,7 @@ export default function rawPlugin(): Plugin {
         }
       })
       build.onLoad({ filter: /\?raw$/, namespace: 'raw-loader' }, async(args) => {
-        const fullPath = args.pluginData.isAbsolute ? args.path : path.join(args.pluginData.resolveDir, args.path);
+        const fullPath = args.pluginData.isAbsolute ? args.path : path.join(args.pluginData.resolveDir, args.path)
         return {
           contents: await readFile(fullPath.replace(/\?raw$/, '')),
           loader: 'text',
