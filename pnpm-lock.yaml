@@ -13,7 +13,7 @@ importers:
         version: 0.9.7(eslint@8.57.0)(typescript@5.4.2)
       '@types/node':
         specifier: ^20.11.25
-        version: 20.11.26
+        version: 20.11.27
       esbuild:
         specifier: ^0.20.1
         version: 0.20.1
@@ -792,8 +792,8 @@ packages:
       '@types/unist': 2.0.10
     dev: true
 
-  /@types/node@20.11.26:
-    resolution: {integrity: sha512-YwOMmyhNnAWijOBQweOJnQPl068Oqd4K3OFbTc6AHJwzweUwwWG3GIFY74OKks2PJUDkQPeddOQES9mLn1CTEQ==}
+  /@types/node@20.11.27:
+    resolution: {integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
