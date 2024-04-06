@@ -12,8 +12,8 @@ importers:
         specifier: ^0.9.7
         version: 0.9.7(eslint@8.57.0)(typescript@5.4.4)
       '@types/node':
-        specifier: ^20.12.2
-        version: 20.12.4
+        specifier: ^20.12.5
+        version: 20.12.5
       esbuild:
         specifier: ^0.20.2
         version: 0.20.2
@@ -24,7 +24,7 @@ importers:
         specifier: ^8.0.2
         version: 8.0.2(typescript@5.4.4)
       typescript:
-        specifier: ^5.4.3
+        specifier: ^5.4.4
         version: 5.4.4
 
   example:
@@ -33,7 +33,7 @@ importers:
         specifier: workspace:*
         version: link:..
       typescript:
-        specifier: ^5.4.3
+        specifier: ^5.4.4
         version: 5.4.4
 
 packages:
@@ -809,8 +809,8 @@ packages:
       '@types/unist': 2.0.10
     dev: true
 
-  /@types/node@20.12.4:
-    resolution: {integrity: sha512-E+Fa9z3wSQpzgYQdYmme5X3OTuejnnTx88A6p6vkkJosR3KBz+HpE3kqNm98VE6cfLFcISx7zW7MsJkH6KwbTw==}
+  /@types/node@20.12.5:
+    resolution: {integrity: sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
