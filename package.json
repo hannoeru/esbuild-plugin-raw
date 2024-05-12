@@ -42,7 +42,7 @@
   "devDependencies": {
     "@hannoeru/eslint-config": "^0.9.7",
     "@types/node": "^20.12.11",
-    "esbuild": "^0.21.1",
+    "esbuild": "^0.21.2",
     "eslint": "^9.2.0",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
