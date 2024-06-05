@@ -41,10 +41,10 @@
   },
   "devDependencies": {
     "@hannoeru/eslint-config": "^0.9.7",
-    "@types/node": "^20.12.13",
+    "@types/node": "^20.14.2",
     "esbuild": "^0.21.4",
     "eslint": "^9.4.0",
-    "tsup": "^8.0.2",
+    "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   }
 }
