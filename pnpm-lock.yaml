@@ -913,8 +913,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-promise@6.2.0:
-    resolution: {integrity: sha512-QmAqwizauvnKOlifxyDj2ObfULpHQawlg/zQdgEixur9vl0CvZGv/LCJV2rtj3210QCoeGBzVMfMXqGAOr/4fA==}
+  eslint-plugin-promise@6.3.0:
+    resolution: {integrity: sha512-XbhIavJwFnSGaxmXwKQCVF+cT4J1BC/j9rRNE8FIg1M4ufA1LpjUnawvDFiCn+gJAmOdra1Y4B5kybHN3pjpNA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -2193,7 +2193,7 @@ snapshots:
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0(eslint@9.6.0)(typescript@5.5.2))(eslint@9.6.0)(typescript@5.5.2)
       '@typescript-eslint/parser': 6.21.0(eslint@9.6.0)(typescript@5.5.2)
       eslint: 9.6.0
-      eslint-config-standard: 17.1.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@9.6.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0))(eslint-plugin-n@16.6.2(eslint@9.6.0))(eslint-plugin-promise@6.2.0(eslint@9.6.0))(eslint@9.6.0)
+      eslint-config-standard: 17.1.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@9.6.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0))(eslint-plugin-n@16.6.2(eslint@9.6.0))(eslint-plugin-promise@6.3.0(eslint@9.6.0))(eslint@9.6.0)
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0(eslint@9.6.0)(typescript@5.5.2))(eslint-plugin-import@2.29.1)(eslint@9.6.0)
       eslint-plugin-eslint-comments: 3.2.0(eslint@9.6.0)
       eslint-plugin-html: 7.1.0
@@ -2204,7 +2204,7 @@ snapshots:
       eslint-plugin-jsx-a11y: 6.9.0(eslint@9.6.0)
       eslint-plugin-markdown: 3.0.1(eslint@9.6.0)
       eslint-plugin-n: 16.6.2(eslint@9.6.0)
-      eslint-plugin-promise: 6.2.0(eslint@9.6.0)
+      eslint-plugin-promise: 6.3.0(eslint@9.6.0)
       eslint-plugin-react: 7.34.3(eslint@9.6.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@9.6.0)
       eslint-plugin-unicorn: 48.0.1(eslint@9.6.0)
@@ -2935,12 +2935,12 @@ snapshots:
       eslint: 9.6.0
       semver: 7.6.2
 
-  eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@9.6.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0))(eslint-plugin-n@16.6.2(eslint@9.6.0))(eslint-plugin-promise@6.2.0(eslint@9.6.0))(eslint@9.6.0):
+  eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@9.6.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0))(eslint-plugin-n@16.6.2(eslint@9.6.0))(eslint-plugin-promise@6.3.0(eslint@9.6.0))(eslint@9.6.0):
     dependencies:
       eslint: 9.6.0
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@9.6.0)(typescript@5.5.2))(eslint-import-resolver-typescript@3.6.1)(eslint@9.6.0)
       eslint-plugin-n: 16.6.2(eslint@9.6.0)
-      eslint-plugin-promise: 6.2.0(eslint@9.6.0)
+      eslint-plugin-promise: 6.3.0(eslint@9.6.0)
 
   eslint-import-resolver-node@0.3.9:
     dependencies:
@@ -3089,7 +3089,7 @@ snapshots:
       resolve: 1.22.8
       semver: 7.6.2
 
-  eslint-plugin-promise@6.2.0(eslint@9.6.0):
+  eslint-plugin-promise@6.3.0(eslint@9.6.0):
     dependencies:
       eslint: 9.6.0
 
