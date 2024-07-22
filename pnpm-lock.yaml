@@ -1029,10 +1029,10 @@ packages:
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
-  fdir@6.1.1:
-    resolution: {integrity: sha512-QfKBVg453Dyn3mr0Q0O+Tkr1r79lOTAKSi9f/Ot4+qVEwxWhav2Z+SudrG9vQjM2aYRMQQZ2/Q1zdA8ACM1pDg==}
+  fdir@6.2.0:
+    resolution: {integrity: sha512-9XaWcDl0riOX5j2kYfy0kKdg7skw3IY6kA4LFT8Tk2yF9UdrADUy8D6AJuBLtf7ISm/MksumwAHE3WVbMRyCLw==}
     peerDependencies:
-      picomatch: 3.x
+      picomatch: ^3 || ^4
     peerDependenciesMeta:
       picomatch:
         optional: true
@@ -3296,7 +3296,7 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
-  fdir@6.1.1(picomatch@4.0.2):
+  fdir@6.2.0(picomatch@4.0.2):
     optionalDependencies:
       picomatch: 4.0.2
 
@@ -4237,7 +4237,7 @@ snapshots:
       debug: 4.3.5
       esbuild: 0.23.0
       execa: 5.1.1
-      fdir: 6.1.1(picomatch@4.0.2)
+      fdir: 6.2.0(picomatch@4.0.2)
       joycon: 3.1.1
       picocolors: 1.0.1
       picomatch: 4.0.2
