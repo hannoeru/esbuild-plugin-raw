@@ -12,7 +12,7 @@ importers:
         specifier: ^0.9.7
         version: 0.9.7(eslint@9.8.0)(typescript@5.5.4)
       '@types/node':
-        specifier: ^20.14.12
+        specifier: ^20.14.13
         version: 20.14.13
       esbuild:
         specifier: ^0.23.0
