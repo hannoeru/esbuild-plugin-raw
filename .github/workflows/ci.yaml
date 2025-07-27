@@ -12,7 +12,6 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    name: Lint
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -32,9 +31,8 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-  typecheck:
+  test:
     runs-on: ubuntu-latest
-    name: Typecheck
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -50,6 +48,9 @@ jobs:
 
       - name: Install
         run: pnpm install
+
+      - name: Build
+        run: pnpm build
 
       - name: Typecheck
         run: pnpm typecheck
