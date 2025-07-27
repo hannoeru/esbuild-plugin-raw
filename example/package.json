@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "esbuild-plugin-raw": "workspace:*",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
 }
