@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-raw",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "packageManager": "pnpm@10.13.1",
   "description": "esbuild plugin for raw import",
   "author": "hannoeru <me@hanlee.co>",
