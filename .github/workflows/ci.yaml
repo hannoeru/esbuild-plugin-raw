@@ -52,7 +52,7 @@ jobs:
         run: pnpm install
 
       - name: Typecheck
-        run: pnpm type-check
+        run: pnpm typecheck
 
   # test:
   #   runs-on: ${{ matrix.os }}
