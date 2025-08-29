@@ -33,6 +33,7 @@
     "release": "npx git-ensure -a && npx bumpp --push --tag --commit",
     "example:serve": "npm -C example run serve",
     "example:build": "npm -C example run build",
+    "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit"
@@ -46,6 +47,7 @@
     "esbuild": "^0.25.9",
     "eslint": "^9.34.0",
     "tsdown": "^0.14.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }
