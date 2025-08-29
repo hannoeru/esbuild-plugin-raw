@@ -20,7 +20,7 @@ export default function rawPlugin(): Plugin {
             contents: await readFile(args.path.replace(/\?raw$/, '')),
             loader: 'text',
           }
-        }
+        },
       )
     },
   }
