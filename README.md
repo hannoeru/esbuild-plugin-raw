@@ -12,27 +12,27 @@ $ npm install -D esbuild-plugin-raw
 
 ```js
 import esbuild from 'esbuild'
-import RawPlugin from 'esbuild-plugin-raw'
+import rawPlugin from 'esbuild-plugin-raw'
 
 esbuild.build({
   entryPoints: ['app.js'],
   bundle: true,
   outfile: 'out.js',
-  plugins: [RawPlugin],
+  plugins: [rawPlugin()],
 }).catch(() => process.exit(1))
 ```
 
 ### With [tsup](https://github.com/egoist/tsup)
 
 ```js
-import RawPlugin from 'esbuild-plugin-raw'
+import rawPlugin from 'esbuild-plugin-raw'
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
   entryPoints: ['index.ts'],
   format: ['cjs', 'esm'],
   dts: true,
-  esbuildPlugins: [RawPlugin()],
+  esbuildPlugins: [rawPlugin()],
   clean: true,
 })
 ```

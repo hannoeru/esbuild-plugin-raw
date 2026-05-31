@@ -1,5 +1,6 @@
-import _plugin from './dist'
-import './client'
+import type { Plugin } from "esbuild";
+import "./client";
 
-export * from './dist'
-export default _plugin
+declare function rawPlugin(): Plugin;
+
+export default rawPlugin;

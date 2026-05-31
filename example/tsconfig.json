@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "types": ["esbuild-plugin-raw/client"]
-  }
+  },
+  "include": ["index.ts"]
 }
