@@ -1,8 +1,8 @@
 import type { BuildOptions } from 'esbuild'
 import { existsSync } from 'node:fs'
-import { mkdir, rm, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
-import { build } from 'esbuild'
+import { build, context } from 'esbuild'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import rawPlugin from '../src/index.js'
 
@@ -206,6 +206,68 @@ Line 4`
     // Should contain the actual JS import, not raw text
     expect(outputText).toContain('var value = 42')
     expect(outputText).not.toContain('export const value = 42;')
+  })
+
+  it('should rebuild when raw files change in watch mode', async () => {
+    const entryFile = join(testDir, 'entry.js')
+    const rawFile = join(testDir, 'watch.txt')
+    const outFile = join(testDir, 'watch-out.js')
+
+    await writeFile(rawFile, 'initial content')
+    await writeFile(entryFile, `
+      import content from './watch.txt?raw'
+      console.log(content)
+    `)
+
+    let buildCount = 0
+    const waitForBuildCount = (target: number) => new Promise<void>((resolve, reject) => {
+      let timeout: ReturnType<typeof setTimeout>
+      const interval = setInterval(() => {
+        if (buildCount >= target) {
+          clearInterval(interval)
+          clearTimeout(timeout)
+          resolve()
+        }
+      }, 50)
+      timeout = setTimeout(() => {
+        clearInterval(interval)
+        clearTimeout(timeout)
+        reject(new Error(`Timed out waiting for ${target} builds, got ${buildCount}`))
+      }, 5000)
+    })
+
+    const ctx = await context({
+      entryPoints: [entryFile],
+      bundle: true,
+      outfile: outFile,
+      plugins: [
+        rawPlugin(),
+        {
+          name: 'watch-test',
+          setup(build) {
+            build.onEnd((result) => {
+              if (result.errors.length === 0) {
+                buildCount += 1
+              }
+            })
+          },
+        },
+      ],
+      format: 'esm',
+    })
+
+    try {
+      await ctx.watch()
+      await waitForBuildCount(1)
+
+      await writeFile(rawFile, 'updated content')
+      await waitForBuildCount(2)
+
+      expect(await readFile(outFile, 'utf8')).toContain('updated content')
+    }
+    finally {
+      await ctx.dispose()
+    }
   })
 
   it('should handle files with special characters in content', async () => {

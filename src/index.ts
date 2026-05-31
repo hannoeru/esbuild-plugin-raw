@@ -21,6 +21,7 @@ export default function rawPlugin(): Plugin {
         return {
           contents: await readFile(args.path, 'utf8'),
           loader: 'text',
+          watchFiles: [args.path],
         }
       })
     },
