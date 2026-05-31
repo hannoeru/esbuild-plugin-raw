@@ -1,6 +1,6 @@
-import type { Plugin } from "esbuild";
-import "./client";
+import type { Plugin } from 'esbuild'
+import './client'
 
-declare function rawPlugin(): Plugin;
+declare function rawPlugin(): Plugin
 
-export default rawPlugin;
+export default rawPlugin

@@ -1,8 +1,7 @@
-import antfu from "@antfu/eslint-config";
+import antfu from '@antfu/eslint-config'
 
 export default antfu({
-	ignores: [".pi-lens/**"],
-	rules: {
-		"antfu/no-import-dist": "off", // allow importing from dist in index.d.ts
-	},
-});
+  rules: {
+    'antfu/no-import-dist': 'off', // allow importing from dist in index.d.ts
+  },
+})
